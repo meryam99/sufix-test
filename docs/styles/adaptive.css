@@ -1,0 +1,133 @@
+@media (min-width: 768px){
+  .header{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 10px 16px;
+  }
+  .header__mid{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header__link {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #D13980;
+  }
+
+  .icon--menu{ display:none; }
+
+  .header__avatar img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .main {
+    padding: 24px;
+  }
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 16px;
+
+  
+}
+ .quiz__aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    width: 56px;
+    background: #2E2E54;
+    border-right: 1px solid #2e2e54;
+    border-top: none;
+    box-shadow: 4px 0 12px rgba(0,0,0,.2);
+    overflow: hidden;
+    transition: width 0.3s ease;
+  }
+
+  .quiz__aside:hover {
+    width: 200px; 
+  }
+
+  .quiz__aside ul {
+   display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+  }
+
+  .quiz__aside a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    width: 56px;
+    height: 32px;
+  }
+  .quiz__aside a:hover { 
+    background: #D1398040; 
+    border-left: 4px solid #D13980;
+    width: 200px;
+
+  }
+
+
+  .quiz__aside-icon {
+    width: 20px;
+    height: 20px;
+
+    filter: invert(1) brightness(2);
+  }
+ .quiz__aside-label {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .quiz__aside:hover .quiz__aside-label {
+    opacity: 1;
+  }
+    .main {
+    margin-left: 56px;
+    padding: 24px;
+    transition: margin-left 0.3s;
+  }
+  .quiz__aside:hover ~ .main {
+    margin-left: 200px;
+  }
+
+
+  .header {
+    margin-left: 56px;
+    padding: 14px 24px;
+    gap: 28px;
+    transition: margin-left 0.3s;
+  }
+  .quiz__aside:hover ~ .header {
+    margin-left: 200px;
+  }
+
+    .quiz__aside a.active {
+    background: none;
+  }
+  .quiz__aside a.active::after {
+    content: none;
+  }
+}
