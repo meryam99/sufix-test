@@ -13,7 +13,7 @@
  ## ⚙️ Як запустити
 
  1. Клонувати репозиторій:
-  git clone https://github.com/your-username/your-repo.git
+  git clone https://github.com/meryam99/sufix-test.git
 
 
 2. Відкрити index.html у браузері
